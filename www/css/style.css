@@ -1,0 +1,117 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	background-color: #e3e3e3;
+	font-family: sans-serif;
+}
+#chatContainer{
+	background-color: #e4f6e8;
+	width: 600px;
+	margin: 30px auto;
+	padding: 5px;
+}
+#loginContainer{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(4, 5, 5, 0.8);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 300px;
+}
+#loginMessage{
+	display: none;
+}
+#title{
+	background-color: green;
+	width: 80%;
+	height: 80px;
+	margin: 20px auto;
+}
+#recordMessage{
+	height: 400px;
+	width: 80%;
+	background-color: green;
+	margin: 20px auto;
+}
+#sendMessage{
+	width: 80%;
+	background-color: green;
+	margin: 20px auto;
+}
+#messageInput{
+    width: 400px;
+    max-width: 440px;
+    height: 111px;
+    max-height: 111px;
+    float:  left;
+}
+/*设置右边选项的样式*/
+#sendOption{
+	margin-left: 410px;
+}
+
+#sendOption input{
+	width: 70px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+#colorBtn{
+	padding: 0px;
+	width: 68px;
+}
+#hiddenBtn{
+	padding: 0px;
+	border: 0px; 
+}
+.imageLable {
+    position: relative;
+}
+#imageBtn {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*设置emoj的div的样式*/
+#emojContainer{
+	position: absolute;
+	bottom: 93px;
+	width: 480px;
+	height: 200px;
+	background-color: #bbb;
+    box-shadow: 0 0 5px #3e3939;
+    display: none;
+}
+/*消息记录框中的样式*/
+ul,dd {
+	margin: 0px;
+	padding: 0px;
+}
+#recordMessage {
+	overflow: scroll;
+}
+.status {
+	text-align: center;
+	font-size: 12px;
+	font-family: monospace sans-serif;
+	color:black;
+}
+#recordMessage dd {
+	overflow: hidden;
+	margin:10px 0px 0px 0px;
+}
+#recordMessage dd div.head {
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+    background: url(../img/user_a.png) no-repeat center center;
+    background-size: cover;
+}
+#recordMessage dd.me div.head{
+	background-image: url(../img/user_a.png);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小小居</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="chatContainer">
+		<div id="title">
+			<h1>Welcome to Little Home</h1>
+			<span id="recordNum">在线的人数</span>
+		</div>
+		<div id="recordMessage">
+			
+		</div>
+		<div id="sendMessage">
+			<textarea id="messageInput" placeHolder="input yoour message here"></textarea>
+			<div id="sendOption">
+			<input type="button" id="emojBtn" value="emoj">
+		    <label for="imageBtn" class="imageLable">
+            <input type="button" id="hiddenBtn" value="image"  />
+            <input id="imageBtn" type="file" value="image"/>
+            </label>
+			<input type="color" id="colorBtn" placeHolder="#000">
+			<input type="button" id="sendBtn" value="send">
+			</div>
+			<div id="emojContainer"></div>
+		</div>
+
+			
+	</div>
+	<div id="loginContainer">
+		<p id="promptMessage">正在连接服务器</p>
+		<div id="loginMessage">
+			<input type="text" placeHolder="请输入你的名字" id="nameInput">
+			<input type="button" id="nameBtn" value="确定">
+		</div>
+	</div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/mainPage.js"></script>
+</body>
+</html>
